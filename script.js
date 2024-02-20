@@ -108,7 +108,7 @@ function show() {
 						value.isFlipped = false;
 					}
 				});
-			}, 300);
+			}, 500);
 		}
 
 		card.onclick = () => {
