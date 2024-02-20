@@ -73,6 +73,8 @@ const cards = [
 	},
 ];
 
+cards.sort(() => 0.5 - Math.random());
+
 const main = document.getElementById("main");
 
 function flippedCards() {
@@ -114,6 +116,8 @@ function show() {
 		card.onclick = () => {
 			if (!value.isFlipped && flippedCards().length < 2) {
 				value.isFlipped = !value.isFlipped;
+
+				
 				if (value.isFlipped) {
 					card.classList.toggle("flip");
 				}
@@ -140,7 +144,7 @@ function show() {
 							flippedCards().slice(0, flippedCards().length);
 						}
 					}
-				}, 800);
+				}, 500);
 			}
 		};
 	});
